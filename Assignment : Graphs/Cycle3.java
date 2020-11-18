@@ -17,11 +17,11 @@ public class Cycle3 {
 
 	public int countCycles(int[][] edges) {
 		int count=0;
-		for(int i=1;i<edges.length;i++) {
-			for(int j=1;j<edges.length;j++) {
+		for(int i=0;i<edges.length;i++) {
+			for(int j=0;j<edges.length;j++) {
 				if(edges[i][j] ==1) {
 					
-					for(int k=1;k<edges.length;k++) {
+					for(int k=0;k<edges.length;k++) {
 						
 						if(k!=i && edges[k][j]==1 && edges[i][k] ==1 ) {
 							count++;
